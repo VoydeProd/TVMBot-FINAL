@@ -1,0 +1,17 @@
+RequiredRole: management
+Embeds:
+  Success:
+    Reminder:
+      Title: Message reminder
+      Description: "{message}"
+      Footer: React to this message once you have been notified
+    List:
+      Title: Message Reminders
+      Description: "{list}"
+      Footer: Disable a reminder with -disableBump <True/False>
+    UpdatedReminder:
+      Title: Reminder updated
+      Description: That reminder's status has been set to ``{status}``
+  Errors:
+    Title: Invalid Id
+    Description: There was a problem fetching the reminder with that id. Try another

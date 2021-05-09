@@ -1,0 +1,6 @@
+Command: invoice
+Permission: Admin
+Enable_Pay_User: true
+Users:
+  DISCORD_ID: jacesmif@gmail.com
+Require_Item_Name: true

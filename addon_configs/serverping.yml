@@ -1,0 +1,4 @@
+Command: serverping
+Servers:
+  Example: example.com
+  VPS: your-ip-address:your-port

@@ -1,0 +1,97 @@
+Permission: admin
+Messages:
+  Permission:
+    Title: Command Manager | Permission
+    DescriptioN: You do not have permission to use the Command Manager
+  EmbedCommand:
+    Description: "{data}"
+  NoArgs:
+    Title: Command Manager | Help
+    Fields:
+      - name: Create Command
+        value: "`{prefix}{command} create <command> <normal/embed> <text>`"
+        inline: true
+      - name: List Command
+        value: "`{prefix}{command} list <all/enabled/disabled>`"
+        inline: true
+      - name: Disable Command
+        value: "`{prefix}{command} disable <command>`"
+        inline: true
+      - name: Enable Command
+        value: "`{prefix}{command} enable <comamnd>`"
+        inline: true
+      - name: Delete Command
+        value: "`{prefix}{command} delete <command>`"
+        inline: true
+      - name: Info Command
+        value: "`{prefix}{command} info <command>`"
+        inline: true
+  CreateArgs:
+    Title: Command Manager | ERROR
+    Description: "`{prefix}{command} create <command> <normal/embed> <text>`"
+  CreateDone:
+    Title: Command Manager | Created
+    Description: The command `{command}` has been successfully created ✅
+  CreateFail:
+    Title: Command Manager | Error
+    Description: The command `{command}` already exists.
+  DisableArgs:
+    Title: Command Manager | Disable
+    Description: "`{prefix}{command} disable <command>`"
+  DisableDone:
+    Title: Command Manager | Disabled
+    Description: The command `{command}` has been successfully disabled ❌
+  DisableFail:
+    Title: Command Manager | Error
+    Description: The command `{command}` does not exist.
+  EnableArgs:
+    Title: Command Manager | Enable
+    Description: "`{prefix}{command} enable <command>`"
+  EnableDone:
+    Title: Command Manager | Disabled
+    Description: The command `{command}` has been successfully enabled ✅
+  EnableFail:
+    Title: Command Manager | Error
+    Description: The command `{command}` does not exist.
+  DeleteArgs:
+    Title: Command Manager | Delete
+    Description: "`{prefix}{command} delete <command>`"
+  DeleteDone:
+    Title: Command Manager | Deleted
+    Description: The command `{command}` has been successfully deleted 💩
+  DeleteFail:
+    Title: Command Manager | Error
+    Description: The command `{command}` does not exist.
+  InfoArgs:
+    Title: Command Manager | Info
+    Description: "`{prefix}{command} info <command>`"
+  InfoDone:
+    Title: Command Manager | Info
+    Fields:
+      - name: ID
+        value: "{id}"
+        inline: true
+      - name: Command
+        value: "{command}"
+        inline: true
+      - name: Type
+        value: "{type}"
+        inline: true
+      - name: Active?
+        value: "{active}"
+        inline: true
+      - name: Message
+        value: "{message}"
+        inline: true
+      - name: Creator
+        value: <@{creator}>
+        inline: true
+  InfoFail:
+    Title: Command Manager | Error
+    Description: The command `{command}` does not exist.
+  List:
+    Title: Command Manager | List
+    Footer: Status | Command | Creator
+    Description: "{commands}"
+  ListStyle: "{active} | **{command}** | {creator}"
+  ¬33: "Possible placeholders: {id}, {command}, {creator}, {type}, {message}"

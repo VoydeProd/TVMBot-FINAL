@@ -1,0 +1,6 @@
+PermissionRole: Staff
+Embeds:
+  NoPermission: You do not have permission to run this command.
+  NotAEmoji: It's not an emoji.
+  NoLink: Please Specify a link to add the emoji.
+  NoName: Please Specify a name for emoji.
